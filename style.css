@@ -1,0 +1,115 @@
+/* 全体のスタイリング */
+body {
+  font-family: Arial, sans-serif;
+  justify-content: center; /* 横方向で中央揃え */
+  align-items: center; /* 縦方向で中央揃え */
+  height: 100vh; /* ビューポート全体の高さを設定 */
+  margin: 0;
+}
+
+/* チャートを囲むコンテナのスタイル */
+.chart-container {
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+  gap: 30px;
+}
+.chart-container div {
+  max-width: 300px; /* コメントの幅を制限 */
+  text-align: left; /* テキストを左揃え */
+  font-size: 16px; /* フォントサイズを設定 */
+  line-height: 1.5; /* 行間を調整 */
+}
+.pastData {
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+  gap: 30px;
+}
+
+/* キャンバスのサイズを設定 */
+canvas {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+/* その他の要素（リンクや説明） */
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  display: block;
+  margin-bottom: 10px;
+}
+h3 {
+  margin-top: 100px;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+.form-container {
+  max-width: 600px;
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+  padding: 20px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+}
+button {
+  margin-top: 20px;
+  font-size: 20px; /* フォントサイズを大きく */
+  font-weight: bold;
+  padding: 15px 150px; /* 内側の余白を調整 */
+  background-color: #2fa4e7; /* ボタンの背景色 */
+  color: white; /* ボタンの文字色 */
+  border: none; /* ボーダーを削除 */
+  border-radius: 10px; /* 角を丸める */
+  cursor: pointer; /* ホバー時のポインターを変更 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+  transition: all 0.3s ease; /* ホバー時のアニメーションを追加 */
+}
+/* ホバー時のスタイル */
+button:hover {
+  background-color: #007bff; /* ホバー時の背景色を変更 */
+  transform: translateY(-3px); /* 少し浮かせる */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* 影を強調 */
+}
+
+/* ボタンのアクティブ時のスタイル */
+button:active {
+  transform: translateY(0); /* 元の位置に戻す */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 元の影に戻す */
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.returnTop {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.comment-box {
+  border: 1px solid #ff93CD;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
